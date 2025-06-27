@@ -1,8 +1,8 @@
-# python_project_template
+# PyQt6_app_template
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml)
 
-Personal python project template
+PyQt6 app template
 
 Python version: 3.12
 
@@ -36,4 +36,12 @@ build docker image
 
 ```bash
 docker build -t main:latest .
+```
+
+### Compile with pyinstaller
+
+To compile the application into a standalone executable, run the following command
+
+```bash
+pyinstaller --onefile --windowed app.py
 ```

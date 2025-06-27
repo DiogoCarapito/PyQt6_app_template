@@ -1,0 +1,142 @@
+/* QMainWindow {
+    background-color: #ffffff;
+}
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+}
+QStackedWidget {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+QPushButton {
+    background-color: #4CAF50;
+    color: #111111;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+QPushButton:hover {
+    background-color: #45a049;
+}
+QLabel {
+    font-size: 16px;
+}
+QLineEdit {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+QMenuBar {
+    background-color: #333333;
+    color: #ffffff;
+}
+QMenuBar::item {
+    background-color: #333333;
+    color: #ffffff;
+}
+QMenuBar::item:selected {
+    background-color: #4CAF50;
+}
+QMenu {
+    background-color: #333333;
+    color: #ffffff;
+}
+QMenu::item:selected {
+    background-color: #4CAF50;
+} */
+/* Main application stylesheet */
+
+/* General styles */
+QMainWindow, QWidget {
+    background-color: #111111;
+    color: #555555;
+}
+
+/* Toolbar styles */
+#mainToolbar {
+    background-color: #222222;
+    border: none;
+    spacing: 15px;
+    padding: 8px;
+}
+
+QToolButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+QToolButton:hover {
+    background-color: #555555;
+}
+
+QToolButton:pressed {
+    background-color: #222222;
+}
+
+/* Theme toggle button */
+#themeToggle {
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #444444;
+}
+
+#themeToggle:hover {
+    background-color: #555555;
+}
+
+/* Settings menu */
+#settingsMenu {
+    background-color: #333333;
+    color: white;
+    border: 1px solid #555555;
+    font-size: 16px;
+}
+
+#settingsMenu::item {
+    padding: 8px 25px;
+}
+
+#settingsMenu::item:selected {
+    background-color: #555555;
+}
+
+/* Navigation sidebar */
+#navWidget {
+    background-color: #2A2A2A;
+}
+
+#navigationSidebar {
+    background-color: #2A2A2A;
+    border: none;
+}
+
+#navButton {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 150px;
+}
+
+#navButton:hover {
+    background-color: #0063B1;
+}
+
+#navButton:pressed {
+    background-color: #004C8C;
+}

@@ -2,7 +2,8 @@
 
 import os
 import sys
-import pytest
+
+# import pytest
 
 from PyQt6.QtWidgets import QApplication, QWidget
 from PyQt6.QtCore import QTimer
@@ -10,7 +11,7 @@ from PyQt6.QtCore import QTimer
 
 def test_window_creation():
     # Skip this test if running on GitHub Actions and we can't set up the environment properly
-    if os.environ.get("GITHUB_ACTIONS") and sys.platform.startswith('linux'):
+    if os.environ.get("GITHUB_ACTIONS") and sys.platform.startswith("linux"):
         # Set the QT_QPA_PLATFORM environment variable to 'offscreen'
         os.environ["QT_QPA_PLATFORM"] = "offscreen"
         # Also set XDG_RUNTIME_DIR which might be needed

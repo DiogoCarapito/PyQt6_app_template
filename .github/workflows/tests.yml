@@ -33,8 +33,11 @@ jobs:
           libxcb-shape0 \
           libxcb-cursor0 \
           libgl1-mesa-dev \
-          libegl1-mesa \
-          libegl1
+          libegl1 \
+          libxcb-util1 \
+          libxcb-xinput0 \
+          libxcb-xfixes0 \
+          x11-utils
         
     - name: Install Python dependencies
       run: |

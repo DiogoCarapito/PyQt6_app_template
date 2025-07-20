@@ -28,13 +28,13 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile --windowed main.py
+          pyinstaller --name App --onefile --windowed --icon=assets/logo.ico app.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: pyqt6_simple_app_${{ runner.os }}
           path: |
-            dist/main.exe
-            dist/main
-            dist/main.app
+            dist/app.exe
+            dist/app
+            dist/app.app

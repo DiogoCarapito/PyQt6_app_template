@@ -21,11 +21,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      # - name: Install dependencies
-      #   run: python -m pip install --upgrade pip
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip
 
-      - name: Build with Make
-        run: make all
+      # - name: Build with Make
+      #   run: make all
 
       - name: Create dist folder
         run: mkdir -p dist
@@ -41,3 +41,9 @@ jobs:
             dist/app.exe
             dist/app
             dist/app.app
+
+      - name: Install libegl1 (Ubuntu only)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libegl1

@@ -1,20 +1,12 @@
-# PyQt6_app_template
+# pyqt6_simple_app
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/pyqt6_simple_app/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/pyqt6_simple_app /actions/workflows/main.yaml)
 
-PyQt6 app template
+PyQt6 simple application template.
 
 Python version: 3.12
 
 ## cheat sheet
-
-### setup
-
-move all files and folders to the current project folder
-
-```bash
-mv python_project_template/{*,.*} . && rm -r python_project_template/
-```
 
 ### venv
 
@@ -30,18 +22,10 @@ activate venv
 source .venv/bin/activate
 ```
 
-### Docker
+### build
 
-build docker image
-
-```bash
-docker build -t main:latest .
-```
-
-### Compile with pyinstaller
-
-To compile the application into a standalone executable, run the following command
+build the application
 
 ```bash
-pyinstaller --onefile --windowed app.py
+pyinstaller --name App --onefile --windowed --icon=assets/logo.ico app.py
 ```

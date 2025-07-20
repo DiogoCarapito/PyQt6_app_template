@@ -1,6 +1,6 @@
-# pyqt6_simple_app
+# PyQt app template
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/pyqt6_simple_app/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/pyqt6_simple_app /actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/PyQt6_app_template/actions/workflows/main.yaml)
 
 PyQt6 simple application template.
 

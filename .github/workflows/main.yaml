@@ -22,13 +22,16 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: python -m pip install --upgrade pip
+
+      - name: Build with Make
+        run: make all
+
+      - name: Create dist folder
+        run: mkdir -p dist
 
       - name: Build with PyInstaller
-        run: |
-          pyinstaller --name App --onefile --windowed --icon=assets/logo.ico app.py
+        run: pyinstaller --name App --onefile --windowed --icon=assets/logo.ico app.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
